@@ -1,13 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Employee Attendance System</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Attendance System - Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Remix Icon for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <i class="ri-time-fill icon-large"></i>
+        <h1>Employee Attendance</h1>
+        <p>Sign in to track your work hours</p>
+      </div>
+      
+      <!-- Login Form -->
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required placeholder="Enter your password">
+        </div>
+        
+        <div id="loginError" class="error-message hidden"></div>
+        
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        
+        <div class="form-footer">
+          <p>Don't have an account?</p>
+          <button type="button" id="showRegisterBtn" class="btn btn-link">Register as Employee</button>
+        </div>
+      </form>
+      
+      <!-- Register Form -->
+      <form id="registerForm" class="auth-form hidden">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" required placeholder="Enter your full name">
+        </div>
+        
+        <div class="form-group">
+          <label for="registerEmail">Email Address</label>
+          <input type="email" id="registerEmail" required placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group">
+          <label for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" required placeholder="Create a password">
+        </div>
+        
+        <div id="registerError" class="error-message hidden"></div>
+        
+        <button type="submit" class="btn btn-primary">Register</button>
+        
+        <div class="form-footer">
+          <p>Already have an account?</p>
+          <button type="button" id="backToLoginBtn" class="btn btn-link">Back to Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="js/auth.js"></script>
+</body>
 </html>
+

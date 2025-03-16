@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Employee Attendance System</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <i class="ri-time-fill"></i>
+        <span>Attendance System</span>
+      </div>
+      <div class="navbar-user">
+        <i class="ri-user-line"></i>
+        <span id="userName"></span>
+        <button id="logoutBtn" class="btn btn-outline">
+          <i class="ri-logout-box-line"></i> Logout
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <h1 class="page-title">Admin Dashboard</h1>
+    
+    <div class="card-container">
+      <!-- Employee Management Card -->
+      <div class="card">
+        <div class="card-header">
+          <h2><i class="ri-user-line"></i> Manage Employees</h2>
+        </div>
+        <div class="card-body">
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="employeeTableBody">
+                <!-- Employee rows will be inserted here by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Attendance Records Card -->
+      <div class="card">
+        <div class="card-header">
+          <h2><i class="ri-calendar-check-line"></i> Attendance Records</h2>
+        </div>
+        <div class="card-body">
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Employee</th>
+                  <th>Date</th>
+                  <th>Check In</th>
+                  <th>Check Out</th>
+                </tr>
+              </thead>
+              <tbody id="attendanceTableBody">
+                <!-- Attendance records will be inserted here by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="js/common.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
+
