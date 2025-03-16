@@ -17,7 +17,8 @@
     "url": "https://github.com/Retraayone/Employee-Attendance-System/issues"
   },
   "homepage": "https://github.com/Retraayone/Employee-Attendance-System#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.2.2"
+  }
 }
-
-
