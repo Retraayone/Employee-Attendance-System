@@ -1,24 +1,22 @@
 {
   "name": "employee-attendance-system",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Retraayone/Employee-Attendance-System.git"
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Retraayone/Employee-Attendance-System/issues"
-  },
-  "homepage": "https://github.com/Retraayone/Employee-Attendance-System#readme",
-  "description": "",
   "devDependencies": {
-    "vite": "^6.2.2"
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.9"
   }
 }
